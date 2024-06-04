@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Input Personalizado</title>
+<style>
+  .custom-file-input {
+    visibility: hidden;
+    width: 0;
+    position: absolute;
+  }
+  .file-upload-wrapper {
+    position: relative;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+  }
+  .file-upload-wrapper::after {
+    content: 'Escolher arquivo';
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+  }
+</style>
+</head>
+<body>
+
+<div class="file-upload-wrapper">
+  <input type="file" class="custom-file-input" id="fileInput">
+</div>
+
+<div>
+    <input type="file">
+  </div>
+
+<script>
+  document.querySelector('.file-upload-wrapper').addEventListener('click', function() {
+    document.getElementById('fileInput').click();
+  });
+</script>
+
+</body>
+</html>
