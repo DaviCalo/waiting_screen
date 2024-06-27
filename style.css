@@ -373,6 +373,9 @@ main{
 #middle-main-area{
     width: 41%;
     background-color: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 
@@ -511,11 +514,6 @@ main{
     cursor: pointer;
 }
 
-
-
-
-
-
 .user-log-load-match{
     display: flex;
     flex-direction: row;
@@ -525,8 +523,140 @@ main{
 }
 
 
+#play-match{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#top-play-match{
+    height: 5%;
+    font: 800 italic 25px "Montserrat";
+    padding: 5px;
+    border: none;
+    color: #ffffff;
+    background-color: transparent;
+}
+
+#chat-play-match{
+    width: 90%;
+    height: 75%;
+    background-color: #eeeeee;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    overflow-y: scroll;
+    padding: 5px;
+}
+
+#chat-play-match > div {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    font: 500 16px "Montserrat";
+    color: #010101;
+    margin: 15px 0px 0px 15px;
+}
+
+#chat-play-match > div > span:first-child{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    font: 800 16px "Montserrat";
+    color: #010101;
+}
+
+#chat-play-match > div > span:first-child{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    font: 800 16px "Montserrat";
+    color: #010101;
+}
 
 
+#input-play-match{
+    height: 5%;
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-bottom: 10px;
+}
+
+
+#input-play-match > input{
+    background-color: #EAE5E5;
+    border: none;
+    border-radius: 8px;
+    width: 310px;
+    height: 30px;
+    font: 500 17px "Montserrat";
+    background-color: rgb(234, 229, 229);
+    border: 2px solid rgb(234, 229, 229,0);
+}
+
+
+#input-play-match:focus{
+    border: 2px solid var(--color-primary);
+}
+    
+#input-play-match > button{
+    width: 80px;
+    height: 35px;
+    color: #909090;
+    border: none;
+    border-radius: 8px;
+    font: 500 20px "Montserrat";
+    background-color: rgb(234, 229, 229);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#timer{
+    width: 100%;
+    height: 9%;
+    font: 700 20px "Montserrat";
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    align-items: center;
+    background-color: var(--color-tertiary);
+    border-radius: 10px;
+}
+
+#timer-bar{
+    width: 80%;
+    height: 12px;
+    background-color: var(--color-primary);
+    border-radius: 10px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+#insider-timer-bar{
+    width: 80%;
+    height: 12px;
+    background-color: var(--color-primary-one);
+    border-radius: 10px;
+}
 
 
 

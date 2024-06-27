@@ -2,8 +2,10 @@ window.onload = () => {
     const nolog = document.getElementById('nlog-load-match');
     const log = document.getElementById('log-load-match');
     const host = document.getElementById('host-load-match');
+    const play = document.getElementById('play-match');
+    const how = document.getElementById('div-how-load-match');
 
-    const hidden = 'host';
+    const hidden = 'play';
 
     switch (hidden) {
         case 'nolog':
@@ -21,6 +23,11 @@ window.onload = () => {
             log.setAttribute('class', 'hidden');
             host.classList.remove('hidden');
             break;
+        default:
+            nolog.setAttribute('class', 'hidden');
+            log.setAttribute('class', 'hidden');
+            host.setAttribute('class', 'hidden');
+            how.setAttribute('class', 'hidden');
     }
 }
 
